@@ -4,7 +4,6 @@ import Home from '../views/Home.vue'
 import Contact from '../views/Contact.vue'
 import Gallery from '../views/Gallery.vue'
 import Services from '../views/Services.vue'
-import About from '../views/About.vue'
 
 Vue.use(VueRouter)
 
@@ -28,11 +27,6 @@ const routes = [
     path: '/services',
     name: 'Services',
     component: Services
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
   }
 ]
 

@@ -8,21 +8,21 @@
                 <p>We offer the full spectrum of Media services. From creating standard Wedding photography experience to Fashion and Potrait Photography to Video Production.</p>
             </div>
             
-            <div id="hype">
+            <div id="hype" data-aos="slide-up">
                 <div id="hypeicon">
                     <v-icon size="60">mdi-account-multiple</v-icon>
                 </div>
                 <h2>Wedding Photography</h2>
                 <p>The people who hire me as a wedding photographer hire me not just because of my photographic style, they hire me because of the style of my personality. My style and personality match, so they know they're getting a genuine style.</p>
             </div>
-            <div id="hype">
+            <div id="hype" data-aos="slide-up">
                 <div id="hypeicon">
                     <v-icon size="60">mdi-account-circle</v-icon>
                 </div>
                 <h2>Potrait Photography</h2>
                 <p>At Ikbo photography and coverage, you are our super star and all activities at the studio is geared towards making you comfortable.</p>
             </div>
-            <div id="hype">
+            <div id="hype" data-aos="slide-up">
                 <div id="hypeicon">
                     <v-icon size="60">mdi-video-vintage</v-icon>
                 </div>

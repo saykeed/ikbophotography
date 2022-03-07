@@ -18,8 +18,7 @@ body{
 }
 
     .list-enter-active{
-        animation: whaBtn .5s linear; 
-        animation-delay: 2s;
+        animation: whaBtn .5s linear;
     }
 
     @keyframes whaBtn {

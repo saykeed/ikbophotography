@@ -8,7 +8,7 @@
 
         <v-navigation-drawer absolute clipped class="white--text" color="info" v-model="navdrawer">
             <v-list dense shaped>
-              <v-list-item-group v-model="selectedItem" color="primary">
+              <v-list-item-group  color="primary">
                 <v-list-item v-for="(link) in links" :key="link.text" :to="link.route" class="my-3 white--text">
                   <v-list-item-icon>
                     <v-icon class="white--text" v-text="link.icon"></v-icon>
@@ -33,9 +33,8 @@ export default {
       links: [
         {icon: 'mdi-home', text: 'Home', route: '/'},
         {icon: 'mdi-folder-multiple-image', text: 'Gallery', route: '/gallery'},
+        {icon: 'mdi-tools', text: 'Our Services', route: '/services'},
         {icon: 'mdi-phone', text: 'Contact', route: '/contact'},
-        {icon: 'mdi-phone', text: 'Our Services', route: '/services'},
-        {icon: 'mdi-phone', text: 'About us', route: '/about'}
       ]
     }
   }

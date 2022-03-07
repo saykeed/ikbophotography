@@ -96,37 +96,6 @@ export default {
 </style>
 
 /*
-<img data-aos="flip-up" src="../assets/img/one.jpg" alt="">
-        <img data-aos="fade-left" src="../assets/img/two.jpg" alt="">
-        <img data-aos="fade-right" src="../assets/img/three.jpg" alt="">
-        <img data-aos="zoom-in" src="../assets/img/four.jpg" alt="">
-        <img data-aos="slide-up" src="../assets/img/five.jpg" alt="">
-        <img data-aos="zoom-out-right" src="../assets/img/six.jpg" alt="">
-        <img data-aos="flip-up" src="../assets/img/seven.jpg" alt="">
-        <img data-aos="fade-left" src="../assets/img/eight.jpg" alt="">
-        <img data-aos="fade-right" src="../assets/img/nine.jpg" alt="">
-        <img data-aos="zoom-in" src="../assets/img/ten.jpg" alt="">
-        <img data-aos="slide-up" src="../assets/img/eleven.jpg" alt="">
-        <img data-aos="zoom-out-right" src="../assets/img/twelve.jpg" alt="">
-        <img data-aos="flip-up" src="../assets/img/thirteen.jpg" alt="">
-        <img data-aos="fade-left" src="../assets/img/fourteen.jpg" alt="">
-        <img data-aos="fade-right" src="../assets/img/fifteen.jpg" alt="">
-        <img data-aos="zoom-in" src="../assets/img/sixteen.jpg" alt="">
-        <img data-aos="slide-up" src="../assets/img/seventeen.jpg" alt="">
-        <img data-aos="zoom-out-right" src="../assets/img/eighteen.jpg" alt="">
-        <img data-aos="flip-up" src="../assets/img/nineteen.jpg" alt="">
-        <img data-aos="fade-left" src="../assets/img/twenty.jpg" alt="">
-        <img data-aos="fade-right" src="../assets/img/twentyone.jpg" alt="">
-        <img data-aos="zoom-in" src="../assets/img/twentytwo.jpg" alt="">
-        <img data-aos="slide-up" src="../assets/img/twentythree.jpg" alt="">
-        <img data-aos="zoom-out-right" src="../assets/img/twentyfour.jpg" alt="">
-        <img data-aos="flip-up" src="../assets/img/twentyfive.jpg" alt="">
-        <img data-aos="fade-left" src="../assets/img/twentysix.jpg" alt="">
-        <img data-aos="fade-right" src="../assets/img/twentyseven.jpg" alt="">
-        <img data-aos="zoom-in" src="../assets/img/twentyeight.jpg" alt="">
-        <img data-aos="slide-up" src="../assets/img/twentynine.jpg" alt="">
-        <img data-aos="zoom-out-right" src="../assets/img/thirty.jpg" alt="">
-        <img data-aos="flip-up" src="../assets/img/thirtyone.jpg" alt="">
-        <img data-aos="fade-left" src="../assets/img/thirtytwo.jpg" alt="">
-        <img data-aos="fade-right" src="../assets/img/thirtythree.jpg" alt="">
+
+
 */

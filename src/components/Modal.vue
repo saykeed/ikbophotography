@@ -174,8 +174,7 @@ export default {
     #imgbox{
         height: 400px;
         display: flex;
-        align-items: center;
-        border: 1px solid red;
+        align-items: center; 
     }
     #imgModal{
         width: 80%;
