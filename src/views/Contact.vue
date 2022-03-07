@@ -5,11 +5,7 @@
       <a ref="email" href="mailto:Ikbo@gmail.com">Send email</a>
 
       <AddressModal  v-if="address" :address="address" @closeModal="contactIkbo('Address')"/>
-      <p>Tel: 07031228335</p>
-      <p>Whatsapp: 07031228335</p>
-      <p>Email: Ikbo@gmail.com</p>
-
-
+ 
       <transition-group tag="div" class="optionBox"
       appear
       @before-enter="beforeEnter"
@@ -18,6 +14,7 @@
         <div class="contactoptions" v-for="(option, index ) in options" :key="option.text" @click="contactIkbo(option.text)" :data-index="index">
           <v-icon >{{ option.icon }}</v-icon>
           <h3>{{ option.text }}</h3>
+          <p>{{ option.info }}</p> 
         </div>
       </transition-group>
 
@@ -34,10 +31,10 @@ export default {
     return{
       address: false,
       options: [
-        {text: 'Phone', icon: 'mdi-phone' },
-        {text: 'Whatsapp', icon: 'mdi-whatsapp'},
-        {text: 'Email', icon: 'mdi-email'},
-        {text: 'Address', icon: 'mdi-map-marker'}
+        {text: 'Phone', icon: 'mdi-phone', info: '07031228335' },
+        {text: 'Whatsapp', icon: 'mdi-whatsapp', info: '07031228335'},
+        {text: 'Email', icon: 'mdi-email', info: 'ikbo@gmail.com'},
+        {text: 'Address', icon: 'mdi-map-marker', info: 'Click me'}
       ]
     }
   },
@@ -82,10 +79,6 @@ export default {
   }
  .contact a{
    display: none;
- }
-
- .contact p{
-   margin: 0px auto;
  }
 
   .optionBox{
