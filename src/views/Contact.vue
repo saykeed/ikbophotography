@@ -5,6 +5,10 @@
       <a ref="email" href="mailto:Ikbo@gmail.com">Send email</a>
 
       <AddressModal  v-if="address" :address="address" @closeModal="contactIkbo('Address')"/>
+      <p>Tel: 07031228335</p>
+      <p>Whatsapp: 07031228335</p>
+      <p>Email: Ikbo@gmail.com</p>
+
 
       <transition-group tag="div" class="optionBox"
       appear
@@ -80,6 +84,10 @@ export default {
    display: none;
  }
 
+ .contact p{
+   margin: 0px auto;
+ }
+
   .optionBox{
     width: 100%;
     max-width: 500px;
@@ -96,12 +104,36 @@ export default {
     margin: 3%;
     box-shadow: 2px 2px 3px rgba(0,0,0,0.200), -2px -2px 3px rgba(0,0,0,0.100);
     border-radius: 20px;
+    cursor: pointer;
   }
   .contactoptions .v-icon{
     color: orangered;
     font-size: 60px;
     margin: 10px auto;
   }
+
+  .contactoptions:active{
+    background: black;
+    color: white;
+  }
+
+  .contactoptions:active .v-icon{
+    color: white;
+  }
+
+  /*for the responsieve screen of md*/
+    @media screen and (min-width:960px){
+        .contactoptions:hover{
+          background: black;
+          color: white;
+        }
+
+        .contactoptions:hover .v-icon{
+          color: white;
+        }
+    }
+
+  
 </style>
 
 /*

@@ -90,7 +90,6 @@ export default {
     max-width: 500px;
     height: 100%;
     object-fit: cover;
-    object-position: center;
     margin: 20px auto;
   }
 </style>

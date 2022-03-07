@@ -7,27 +7,28 @@
             <div class="serviceintro">
                 <p>We offer the full spectrum of Media services. From creating standard Wedding photography experience to Fashion and Potrait Photography to Video Production.</p>
             </div>
-            
-            <div id="hype" data-aos="slide-up">
-                <div id="hypeicon">
-                    <v-icon size="60">mdi-account-multiple</v-icon>
+            <div id="hypedivs">
+                <div id="hype" data-aos="slide-up">
+                    <div id="hypeicon">
+                        <v-icon size="60">mdi-account-multiple</v-icon>
+                    </div>
+                    <h2>Wedding Photography</h2>
+                    <p>The people who hire me as a wedding photographer hire me not just because of my photographic style, they hire me because of the style of my personality. My style and personality match, so they know they're getting a genuine style.</p>
                 </div>
-                <h2>Wedding Photography</h2>
-                <p>The people who hire me as a wedding photographer hire me not just because of my photographic style, they hire me because of the style of my personality. My style and personality match, so they know they're getting a genuine style.</p>
-            </div>
-            <div id="hype" data-aos="slide-up">
-                <div id="hypeicon">
-                    <v-icon size="60">mdi-account-circle</v-icon>
+                <div id="hype" data-aos="slide-up">
+                    <div id="hypeicon">
+                        <v-icon size="60">mdi-account-circle</v-icon>
+                    </div>
+                    <h2>Potrait Photography</h2>
+                    <p>At Ikbo photography and coverage, you are our super star and all activities at the studio is geared towards making you comfortable.</p>
                 </div>
-                <h2>Potrait Photography</h2>
-                <p>At Ikbo photography and coverage, you are our super star and all activities at the studio is geared towards making you comfortable.</p>
-            </div>
-            <div id="hype" data-aos="slide-up">
-                <div id="hypeicon">
-                    <v-icon size="60">mdi-video-vintage</v-icon>
+                <div id="hype" data-aos="slide-up">
+                    <div id="hypeicon">
+                        <v-icon size="60">mdi-video-vintage</v-icon>
+                    </div>
+                    <h2>Video Production</h2>
+                    <p>Cinematography and movie production is one area we specialize in. With Ikbo's state of the art video studio your production is ready to roll. </p>
                 </div>
-                <h2>Video Production</h2>
-                <p>Cinematography and movie production is one area we specialize in. With Ikbo's state of the art video studio your production is ready to roll. </p>
             </div>
         </div>
         <transition name="list" appear >
@@ -58,7 +59,7 @@
     .serviceHead{
         background: url(../assets/img/eight.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: center top;
         height: 500px;
         width: 100%;
         color: white;
@@ -107,4 +108,17 @@
     #hype:hover #hypeicon .v-icon{
         color: black;
     }
+
+    /*for the responsieve screen of md*/
+    @media screen and (min-width:960px){
+        #hypedivs{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #hype{
+            width: 30%;
+        }
+    }
+    
 </style>

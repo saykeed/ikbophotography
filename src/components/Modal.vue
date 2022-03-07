@@ -181,7 +181,6 @@ export default {
         height: auto;
         max-height: 80%; 
         object-fit: cover;
-        object-position: center;
         margin: 0 auto;
     }
     @keyframes slideoutleft{

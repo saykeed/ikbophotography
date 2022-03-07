@@ -133,7 +133,6 @@ export default {
 <style>
   .main{
     position: relative;
-    border: 1px solid red;
     height: 100vh;
     overflow: hidden;
   }
@@ -142,6 +141,7 @@ export default {
     height: 100%;
     display: flex;
     position: relative;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   }
 
   .slider div{
@@ -158,7 +158,6 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
   }
 
   
@@ -169,10 +168,10 @@ export default {
     transform: translateX(-100%);
   }
   .left-leave-active{
-    transition: all .5s ease;
+    transition: all .3s linear;
   }
   .left-enter-active{
-    animation: slideinleft .5s ease;
+    animation: slideinleft .3s linear;
   }
 
   @keyframes slideinleft{
@@ -187,10 +186,10 @@ export default {
     transform: translateX(100%);
   }
   .right-leave-active{
-    transition: all .5s ease;
+    transition: all .3s linear;
   }
   .right-enter-active{
-    animation: slideinright .5s ease;
+    animation: slideinright .3s linear;
   }
 
   @keyframes slideinright{
@@ -238,7 +237,7 @@ export default {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.400); 
+    background: rgba(0, 0, 0, 0.09); 
     color: white;
     text-align: right;
   }
@@ -259,64 +258,15 @@ export default {
     color: orangered;
   }
 
+
+  /*for the responsieve screen of md*/
+    @media screen and (min-width:960px){
+        #intro h1{
+          font-size: 100px; 
+        }
+        #intro p{
+          font-size: 30px;
+        }
+    }
   
 </style>
-
-/* 
-
-<div class="home" :style="currentImage"></div>
-animation: zoom 4s linear infinite;
-
-
-
-
-
-
-
-
-
-
-// import Nav from '../components/Nav.vue'
-
-export default {
- components: {  },
-  data() {
-    return{
-      currentSlide: 0,
-      num: ['one', 'four', 'eight', 'eighteen', 'fifteen', 'fourteen', 'nine', 
-      'nineteen', 'thirty', 'thirtyone', 'thirtytwo', 'twentyseven','twentythree', 'two']
-    }
-  },
-  methods: {
-    sliding() {
-        setInterval(() => {
-          this.next()
-        }, 4000)
-      },
-    
-    next() {
-      if (this.currentSlide >= this.num.length-1) {
-        this.currentSlide = 0
-      } else{
-        this.currentSlide++
-      }
-      
-    },
-    whatsappFunction() {
-      this.$refs.whatsapp.click();
-    }
-  },
-  mounted() {
-    this.sliding()
-  },
-  computed: {
-    currentImage() {
-      return {'background-image': 'url(' + require('../assets/slides/' + this.num[this.currentSlide] + '.jpg') + ')'}
-    }
-  }
-  
-}
-
-
-
-*/

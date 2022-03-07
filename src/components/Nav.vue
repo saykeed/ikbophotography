@@ -4,6 +4,11 @@
             <router-link to="/"><img src="../assets/logo.jpg" class="mainLogo" alt=""></router-link>
             <v-spacer></v-spacer>
             <v-app-bar-nav-icon class="d-md-none white--text" @click="navdrawer = !navdrawer"></v-app-bar-nav-icon> 
+            <ul id="navlinks" class="d-none d-md-flex">
+                <li v-for="(link) in links" :key="link.text" :class="{remove: link.route == '/'}" >
+                  <router-link :to="link.route">{{ link.text }}</router-link>
+                </li>
+            </ul>
         </v-app-bar>
 
         <v-navigation-drawer absolute clipped class="white--text" color="info" v-model="navdrawer">
@@ -48,8 +53,5 @@ export default {
    .mainLogo{
      width: 60px;
    }
-   a.router-link-active{
-     display: flex;
-     align-items: center;
-   }
+   
 </style>
